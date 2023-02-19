@@ -1,0 +1,21 @@
+#Variables for ACK and SCK
+
+variable "aws_access_key" {}
+variable "aws_secret_key" {}
+
+# Update Provider
+# AWS As my Provider
+provider "aws" {
+  region     = "us-west-1"
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_keyclient_loop: send disconnect: Connection reset by peer
+
+lpb61452@HCLL2021105 MINGW64 ~/videos/devops
+$ source "aws_vpc" "tcs" {
+  cidr_block       = "10.0.0.0/16"
+  instance_tenancy = "default"
+
+  tags = {
+    Name = "TCS"
+  }
+}
